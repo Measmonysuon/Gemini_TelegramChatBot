@@ -26,7 +26,8 @@ followup_reply_markup.add(telebot.types.KeyboardButton(text="Photography"))
 followup_reply_markup.add(telebot.types.KeyboardButton(text="Videography"))
 followup_reply_markup.add(telebot.types.KeyboardButton(text="Special offer"))
 
-@bot.message_handler(commands=['start'])  # Use /start command to trigger the message
+# Use /start command to trigger the message
+@bot.message_handler(commands=['start'])  
 def send_welcome_message(message):
     chat_id = message.chat.id
     text = ("Aforative Media's Generative AI សូមស្វាគមន៍\n"
